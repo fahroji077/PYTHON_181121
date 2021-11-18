@@ -2,7 +2,40 @@
 
 1. PROGRAM INPUT NILAI DAN NAMA MAHASISWA
 
+```y
+#list
+import math
+list_no = 0
+list_nama = []
+list_nilai = []
+total = 0
+
+#input nama dan nilai
+print("="*40)
+print("="*39)
+batas = 5
+for n in range(batas):
+    list_nama.append(input("Masukkan nama  : "))
+    list_nilai.append(int(input("Masukkan nilai : ")))
+    print()
+    jml = n + 1
+    total += list_nilai[n]
+    rata = total / jml
+
+#output
+print("--------------------------------------------")
+print("No      Nama             Nilai   Keterangan")
+print("--------------------------------------------")
+for i in range(batas):
+    list_no += 1
+    print(list_no,"\t",list_nama[i],"\t\t",list_nilai[i],"\t")
+print("---------------------------------------")
+print("Jumlah Mahasiswa =",jml)
+print("Rata-rata        =",rata)
+print("Nilai tertinggi  =",max(list_nilai))
+print("Nilai tertinggi  =",min(list_nilai))
 ```
+![image](https://user-images.githubusercontent.com/93015185/142443249-c1534d1b-3af3-4127-8733-5db6748f00a6.png)
 
 2. PROGRAM INPUT NILAI, NAMA MAHASISWA DAN MENAMPILKAN KETERANGAN LULUS/TIDAK
 ```y
