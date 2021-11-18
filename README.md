@@ -1,6 +1,10 @@
 # PYTHON_181121
 
-1.PROGRAM INPUT NILAI DAN NAMA MAHASISWA
+1. PROGRAM INPUT NILAI DAN NAMA MAHASISWA
+
+```
+
+2. PROGRAM INPUT NILAI, NAMA MAHASISWA DAN MENAMPILKAN KETERANGAN LULUS/TIDAK
 ```y
 #list
 import math
@@ -41,7 +45,6 @@ print("Nilai tertinggi  =",min(list_nilai))
 ```
 ![image](https://user-images.githubusercontent.com/93015185/142434943-e61d8c27-b133-4b5f-96b1-b00098fb0186.png)
 
-2.
 3.
 4. PROGRAM MENCARI BILANGAN GENAP
 
