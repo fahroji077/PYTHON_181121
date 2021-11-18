@@ -8,6 +8,7 @@ list_no = 0
 list_nama = []
 list_nilai = []
 total = 0
+grade = []
 
 #input nama dan nilai
 print("="*40)
@@ -20,6 +21,10 @@ for n in range(batas):
     jml = n + 1
     total += list_nilai[n]
     rata = total / jml
+    if list_nilai[n] >= 60:
+        grade.append('lulus')
+    else:
+        grade.append('tidak lulus')
 
 #output
 print("--------------------------------------------")
@@ -27,14 +32,14 @@ print("No      Nama             Nilai   Keterangan")
 print("--------------------------------------------")
 for i in range(batas):
     list_no += 1
-    print(list_no,"\t",list_nama[i],"\t\t",list_nilai[i],"\t")
+    print(list_no,"\t",list_nama[i],"\t\t",list_nilai[i],"\t",grade[i])
 print("---------------------------------------")
 print("Jumlah Mahasiswa =",jml)
 print("Rata-rata        =",rata)
 print("Nilai tertinggi  =",max(list_nilai))
 print("Nilai tertinggi  =",min(list_nilai))
 ```
-![image](https://user-images.githubusercontent.com/93015185/142430637-33ada1cf-dafd-4169-8a9b-c3ef2e732253.png)
+![image](https://user-images.githubusercontent.com/93015185/142434943-e61d8c27-b133-4b5f-96b1-b00098fb0186.png)
 
 2.
 3.
